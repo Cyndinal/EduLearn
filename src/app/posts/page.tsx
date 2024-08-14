@@ -1,18 +1,26 @@
-import React from 'react';
+import React, {Suspense} from 'react';
+import Link from "next/link";
+import Postlist from "@/app/libs/Postlist";
+import {getKindeServerSession} from "@kinde-oss/kinde-auth-nextjs/server";
+import {redirect} from "next/navigation";
 
-function Page() {
-    const response = fetch("'https://dummyjson.com/posts?limit=10'").then((res)=>res.json())
+
+
+async function Page() {
+
+    const {isAuthenticated} = getKindeServerSession()
+    const isUserAuthenticated = await isAuthenticated();
+    if(!isUserAuthenticated){
+        redirect("/api/auth/login?post_login_redirect_url=/");
+    }
+
     return (
-        <div>
-            All Posts
-            <div>
-                {response.map((post:any)=>(
-                    <div key={post.id}>{post.title}</div>
-                ))}
-
+            <div className={'flex flex-col m-auto'}>
+                <Suspense fallback={"Loading..."}>
+                <Postlist/>
+                </Suspense>
             </div>
 
-        </div>
     );
 }
 

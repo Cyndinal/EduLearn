@@ -21,11 +21,11 @@ export const PoliticsData = [
 ]
 
 export const HealthData = [
-    {
-        ImageUrl: "/DF.jpeg",
-        topic:"Dengue and severe dengue",
-        Description:"Dengue is a mosquito-borne viral infection that is common in warm, tropical climates. Infection is caused by any one of four closely related dengue viruses (called serotypes) and these can lead to a wide spectrum of symptoms, including some which are extremely mild (unnoticeable) to those that may require medical intervention and hospitalization. In severe cases, fatalities can occur. There is no treatment for the infection itself but the symptoms that a patient experiences can be managed.",
-    },
+    // {
+    //     ImageUrl: "/Wash.jpeg",
+    //     topic:"Dengue and severe dengue",
+    //     Description:"Dengue is a mosquito-borne viral infection that is common in warm, tropical climates. Infection is caused by any one of four closely related dengue viruses (called serotypes) and these can lead to a wide spectrum of symptoms, including some which are extremely mild (unnoticeable) to those that may require medical intervention and hospitalization. In severe cases, fatalities can occur. There is no treatment for the infection itself but the symptoms that a patient experiences can be managed.",
+    // },
     {
         ImageUrl: "/Wash.jpeg",
         topic:"Estimating WASH-related burden of disease",
@@ -35,6 +35,12 @@ export const HealthData = [
     },
     {
         ImageUrl: "/Discover.jpeg",
+        topic:"Health security",
+        Description:"Global public health security is defined as the activities required, both proactive and reactive, to minimize the danger and impact of acute public health events that endanger people’s health across geographical regions and international boundaries.\n" +
+            "\n" +
+            "Population growth, rapid urbanization, environmental degradation, and the misuse of antimicrobials are disrupting the equilibrium of the microbial world. New diseases, like COVID-19, are emerging at unprecedented rates disrupting people’s health and causing social and economic impacts. Billions of passengers travel on airplanes each year, increasing the opportunities for the rapid international spread of infectious agents and their vectors.",
+    }, {
+        ImageUrl: "/DQ.jpeg",
         topic:"Health security",
         Description:"Global public health security is defined as the activities required, both proactive and reactive, to minimize the danger and impact of acute public health events that endanger people’s health across geographical regions and international boundaries.\n" +
             "\n" +

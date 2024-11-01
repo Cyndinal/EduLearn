@@ -2,12 +2,10 @@ import React from 'react';
 
 function Content() {
     return (
-        <div className={'flex  justify-center align-middle font-extrabold text-7xl text-white '}>
+        <div className={'text-xl md:7xl flex items-center justify-center align-middle md:font-extrabold text-white '}>
             <div>
-                Reading <span className={'text-2xl'}>JAMZ</span>
+                Reading <span className={'md:font-extrabold '}>JAMZ</span>
             </div>
-
-
 
         </div>
     );

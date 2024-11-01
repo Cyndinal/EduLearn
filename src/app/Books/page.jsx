@@ -5,7 +5,7 @@ import Link from "next/link";
 
 function Page(props) {
     return (
-        <div className={'grid grid-cols-3'}>
+        <div className={'flex-col md:grid md:grid-cols-3'}>
             {BooksData.map((book, index) => (
                 <div key={index} className={'rounded-md text-wrap w-90 m-5 p-4'}>
                     <h4 className={'p-4 text-2xl'}>{book.topic}</h4>

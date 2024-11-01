@@ -3,7 +3,10 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/app/Navbar";
 import React from "react";
+import Footer from "@/app/Footer";
 const inter = Inter({ subsets: ["latin"] });
+import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar"
+import { AppSidebar } from "@/components/app-sidebar"
 
 export const metadata: Metadata = {
   title: "Portia Blog",
@@ -16,11 +19,22 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
+
     <html lang="en">
-      <body className={`${inter.className} h-14 bg-gradient-to-r from-purple-500 to-pink-500`}>
-      <Navbar />
-          {children}
-      </body>
+    <body className={`${inter.className} h-14 bg-gradient-to-r from-purple-500 to-pink-500`}>
+    {/*<SidebarProvider>*/}
+    {/*    <AppSidebar />*/}
+    {/*    <main>*/}
+    {/*        <SidebarTrigger />*/}
+    {/*        {children}*/}
+    {/*    </main>*/}
+    {/*</SidebarProvider>*/}
+
+
+    <Navbar/>
+    {children}
+    <Footer/>
+    </body>
     </html>
   );
 }

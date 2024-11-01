@@ -5,7 +5,7 @@ import Link from "next/link";
 
 function Page() {
     return (
-        <div className="grid grid-cols-3">
+        <div className="flex-col md:grid md:grid-cols-3">
             {PoliticsData.map((item, index) => (
 
                 <div key={index} className={'rounded-md text-wrap w-90 m-5 p-4'}>

@@ -1,48 +1,30 @@
 import React from 'react';
 import Image from "next/image";
+import {PoliticsData} from "../PoliticsData";
+import Link from "next/link";
 
-function Page(props) {
+function Page() {
     return (
-        <div className="grid grid-cols-3 gap-4">
-            <div>
-                <Image width={200} height={100} src={'/Healthy.jpeg'} alt={"Health"} />
-                <blockquote>
-                    The new dimension of political bespoke it trending a new wave
-                    The new dimension of political bespoke it trending a new wave
+        <div className="grid grid-cols-3">
+            {PoliticsData.map((item, index) => (
 
-                </blockquote>
-            </div>
+                <div key={index} className={'rounded-md text-wrap w-90 m-5 p-4'}>
+                    <h4 className={'p-4'}>{item.topic}</h4>
+                    <div className={'pb-10'}>
+                        <Image width={200} height={50} src={item.ImageUrl} alt={"Health"}/>
+                    </div>
 
-            <div>
-                <Image width={200} height={100} src={'/Healthy.jpeg'} alt={"Health"} />
-                <blockquote>
-                    The new dimension of political bespoke it trending a new wave
-                    The new dimension of political bespoke it trending a new wave
+                    <code className={'text-wrap pt-10'}>
+                        {item.Description}
+                        <span>
+                            <Link href="/https://news.un.org/en/story/2024/07/1151981">Read more</Link>
+                        </span>
 
-                </blockquote>
+                    </code>
+                </div>
+            ))}
 
-            </div>
 
-            <div>
-                <Image width={200} height={100} src={'/Healthy.jpeg'} alt={"Health"} />
-                <blockquote>
-                    The new dimension of political bespoke it trending a new wave
-                    The new dimension of political bespoke it trending a new wave
-
-                </blockquote>
-            </div>
-
-            <div>
-                <Image width={250} height={150} src={'/Healthy.jpeg'} alt={"Health"} />
-                <blockquote>
-                    The new dimension of political bespoke it trending a new wave
-                    The new dimension of political bespoke it trending a new wave
-
-                </blockquote>
-            </div>
-            <div>5</div>
-
-            <div>9</div>
         </div>
     );
 }

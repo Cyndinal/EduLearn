@@ -1,10 +1,10 @@
 import React from 'react';
 import Image from "next/image";
 
-function Books(props) {
+function Books() {
     return (
-            <div className={'flex md:w-auto  h-auto rounded-md'}>
-                <Image width={500} height={100} src={'/Books.jpeg'} alt={"Books"} />
+            <div className={'flex rounded-xl'}>
+                <Image width={350} height={200} src={'/Books.jpeg'} alt={"Books"} />
             </div>
 
 

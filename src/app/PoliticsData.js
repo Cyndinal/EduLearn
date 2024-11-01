@@ -40,7 +40,7 @@ export const HealthData = [
             "\n" +
             "Population growth, rapid urbanization, environmental degradation, and the misuse of antimicrobials are disrupting the equilibrium of the microbial world. New diseases, like COVID-19, are emerging at unprecedented rates disrupting people’s health and causing social and economic impacts. Billions of passengers travel on airplanes each year, increasing the opportunities for the rapid international spread of infectious agents and their vectors.",
     }, {
-        ImageUrl: "/DQ.jpeg",
+        ImageUrl: "/Discover.jpeg",
         topic:"Health security",
         Description:"Global public health security is defined as the activities required, both proactive and reactive, to minimize the danger and impact of acute public health events that endanger people’s health across geographical regions and international boundaries.\n" +
             "\n" +
